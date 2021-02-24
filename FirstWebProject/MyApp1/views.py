@@ -18,4 +18,13 @@ def index(request):
         }
     )
 
+def about(request):
+    return render(
+        request,
+        "MyApp1/about.html",
+        {
+            'title' : "About HelloDjangoApp",
+            'content' : "Example app page for Django."
+        }
+    )
 # Create your views here.
